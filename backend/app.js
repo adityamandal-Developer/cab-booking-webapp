@@ -6,10 +6,12 @@ dotenv.config()
 
 import express from 'express';
 import cors from 'cors'
+import connectdb from './db/db.js'
 
 /**
  * @Configuratinos
 **/
+connectdb()
 const app = express();
 app.use(cors())
 
